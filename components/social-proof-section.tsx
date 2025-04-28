@@ -12,21 +12,21 @@ export default function SocialProofSection() {
         "They built my restaurant website in just 3 days and it looks amazing. We've seen a 40% increase in online reservations since launch.",
       author: "Sarah Johnson",
       business: "Taste of Home Restaurant",
-      avatar: "https://images2.imgbox.com/c3/ce/8w3Ul6fm_o.jpg",
+      avatar: "/SrahJohnson.jpg",
     },
     {
       quote:
         "As a small law firm, we needed a professional online presence. ARK delivered a site that perfectly represents our brand and values.",
       author: "Michael Chen",
       business: "Chen Legal Services",
-      avatar: "https://images2.imgbox.com/ef/07/DQTtaj95_o.jpg",
+      avatar: "/MicahelChen.jpg",
     },
     {
       quote:
         "The process was so easy! I was worried about the technical aspects, but they handled everything. My online store is now thriving.",
       author: "David Miller",
       business: "Miller Auto Repair",
-      avatar: "https://images2.imgbox.com/f3/d4/sBzKlNl6_o.jpg",
+      avatar: "/DavidMiller.jpg",
     },
   ]
 

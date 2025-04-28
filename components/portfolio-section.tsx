@@ -13,13 +13,13 @@ export default function PortfolioSection() {
       title: "Local Bakery Website",
       category: "Small Business Website",
       description: "Custom website with online ordering system and location finder",
-      image: "https://images2.imgbox.com/e4/69/EUrPLXf8_o.png",
+      image: "/bakery.png",
     },
     {
       title: "Fitness Trainer Portfolio",
       category: "Personal Brand Website",
       description: "Mobile-first design with class booking and testimonials",
-      image: "https://images2.imgbox.com/78/0c/PBwB0j35_o.png",
+      image: "/fitness.png",
     },
     {
       title: "Boutique Shop",

@@ -8,11 +8,11 @@ export default function Header() {
     <header className="w-full bg-neutral-900/95 shadow-md py-3 px-0 fixed top-0 left-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4">
         <Image
-          src="/arklogotransparent.png"
+          src="/arklogo.png"
           alt="ARK Logo"
-          width={120}
-          height={40}
-          className="h-10 w-auto cursor-pointer"
+          width={180}
+          height={60}
+          className="h-16 w-auto cursor-pointer"
           priority
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         />
