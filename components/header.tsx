@@ -10,9 +10,9 @@ export default function Header() {
         <Image
           src="/arklogo.png"
           alt="ARK Logo"
-          width={180}
-          height={60}
-          className="h-16 w-auto cursor-pointer"
+          width={140}
+          height={48}
+          className="h-12 w-auto cursor-pointer"
           priority
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
         />
