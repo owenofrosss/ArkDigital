@@ -94,47 +94,29 @@ export default function HeroSection() {
           </AnimationWrapper>
 
           <AnimationWrapper delay={0.8} animation="fadeUp">
-            <div className="bg-black/30 p-4 rounded-lg inline-block backdrop-blur-sm">
+            <div className="bg-black/30 p-4 rounded-lg inline-block backdrop-blur-sm w-full max-w-2xl mx-auto">
               <p className="text-white/80 text-sm mb-2">Trusted by local businesses like yours</p>
-              <div className="flex justify-center items-center space-x-6">
-                <motion.div
-                  className="flex items-center"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                >
+              <div className="flex flex-col sm:flex-row justify-center items-center gap-6">
+                <div className="flex items-center">
                   <div className="text-3xl text-cyan-300 font-bold">97%</div>
                   <div className="text-white text-xs ml-2 text-left">
-                    Conversion
-                    <br />
-                    Rate
+                    Conversion<br />Rate
                   </div>
-                </motion.div>
-                <div className="h-10 w-px bg-white/20"></div>
-                <motion.div
-                  className="flex items-center"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                >
+                </div>
+                <div className="hidden sm:block h-10 w-px bg-white/20"></div>
+                <div className="flex items-center">
                   <div className="text-3xl text-cyan-300 font-bold">24h</div>
                   <div className="text-white text-xs ml-2 text-left">
-                    Delivery
-                    <br />
-                    Time
+                    Delivery<br />Time
                   </div>
-                </motion.div>
-                <div className="h-10 w-px bg-white/20"></div>
-                <motion.div
-                  className="flex items-center"
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ type: "spring", stiffness: 400, damping: 10 }}
-                >
+                </div>
+                <div className="hidden sm:block h-10 w-px bg-white/20"></div>
+                <div className="flex items-center">
                   <div className="text-3xl text-cyan-300 font-bold">100%</div>
                   <div className="text-white text-xs ml-2 text-left">
-                    Satisfaction
-                    <br />
-                    Guarantee
+                    Satisfaction<br />Guarantee
                   </div>
-                </motion.div>
+                </div>
               </div>
             </div>
           </AnimationWrapper>
