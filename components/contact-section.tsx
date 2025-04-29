@@ -123,8 +123,8 @@ export default function ContactSection({ calendlyRef }: { calendlyRef: React.Ref
               {/* Calendly inline widget begin */}
               <div
                 className="calendly-inline-widget w-full"
-                data-url="https://calendly.com/owenofross/discovery-call?primary_color=8a2be2&background_color=0f172a&text_color=ffffff"
-                style={{ minWidth: 0, width: '100%', height: 1200, maxWidth: '100vw' }}
+                data-url="https://calendly.com/getarkdigital/discovery-call"
+                style={{ minWidth: 0, width: '100%', height: 700, maxWidth: '100vw' }}
               ></div>
               {/* Calendly inline widget end */}
             </div>

@@ -16,11 +16,17 @@ import Header from "@/components/header"
 import { useRef } from "react"
 import { CalendlyFormRefContext } from "@/components/contact-section"
 import CalendlyPreload from "@/components/CalendlyPreload"
+import Head from "next/head"
 
 export default function Home() {
   const calendlyRef = useRef<HTMLDivElement | null>(null)
   return (
     <CalendlyFormRefContext.Provider value={calendlyRef}>
+      <Head>
+        <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+        <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+        <script type="text/javascript" dangerouslySetInnerHTML={{ __html: `window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/getarkdigital/discovery-call', text: 'Schedule Call', color: '#0069ff', textColor: '#ffffff' }); }` }} />
+      </Head>
       <main className="flex min-h-screen flex-col">
         <Header />
         <CalendlyPreload />

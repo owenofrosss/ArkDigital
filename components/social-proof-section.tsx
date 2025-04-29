@@ -51,19 +51,9 @@ export default function SocialProofSection() {
               key={index}
               className="bg-gray-100 p-8 rounded-lg shadow-md border border-gray-200 flex flex-col items-center"
             >
-              <div className="flex items-center mb-6">
-                <div className="relative w-[60px] h-[60px] mr-4 bg-gray-200 rounded-full overflow-hidden">
-                  <Image
-                    src={testimonial.avatar || "/placeholder.svg"}
-                    alt={testimonial.author}
-                    fill
-                    className="rounded-full object-cover aspect-square"
-                  />
-                </div>
-                <div>
-                  <h3 className="text-purple-900 font-bold">{testimonial.author}</h3>
-                  <p className="text-gray-500 text-sm">{testimonial.business}</p>
-                </div>
+              <div className="mb-6 text-center">
+                <h3 className="text-purple-900 font-bold">{testimonial.author}</h3>
+                <p className="text-gray-500 text-sm">{testimonial.business}</p>
               </div>
               <p className="text-gray-700 italic text-center">"{testimonial.quote}"</p>
             </div>

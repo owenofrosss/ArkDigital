@@ -14,7 +14,7 @@ export default function HeroSection() {
   const calendlyRef = useContext(CalendlyFormRefContext)
 
   return (
-    <section className="relative pt-20 pb-16 md:pt-28 md:pb-20 lg:pt-32 lg:pb-28 overflow-hidden">
+    <section className="relative pt-10 pb-16 md:pt-16 md:pb-20 lg:pt-24 lg:pb-28 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <Image src="/tech-pattern.png" alt="Tech Pattern Background" fill className="object-cover opacity-20" />
       </div>
