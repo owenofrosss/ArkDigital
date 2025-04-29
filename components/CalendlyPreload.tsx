@@ -1,20 +1,24 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 
 export default function CalendlyPreload() {
-  const [show, setShow] = useState(false);
-
   useEffect(() => {
-    setShow(true);
+    // Preload CSS
+    if (!document.getElementById("calendly-preload-css")) {
+      const link = document.createElement("link");
+      link.id = "calendly-preload-css";
+      link.href = "https://assets.calendly.com/assets/external/widget.css";
+      link.rel = "stylesheet";
+      document.head.appendChild(link);
+    }
+    // Preload JS
+    if (!document.getElementById("calendly-preload-js")) {
+      const script = document.createElement("script");
+      script.id = "calendly-preload-js";
+      script.src = "https://assets.calendly.com/assets/external/widget.js";
+      script.async = true;
+      document.body.appendChild(script);
+    }
   }, []);
-
-  if (!show) return null;
-
-  return (
-    <div
-      className="calendly-inline-widget hidden"
-      data-url="https://calendly.com/owenofross/discovery-call?primary_color=8a2be2&background_color=0f172a&text_color=ffffff"
-      style={{ minWidth: 320, height: 10 }}
-    ></div>
-  );
+  return null;
 } 
