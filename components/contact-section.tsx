@@ -94,6 +94,13 @@ export default function ContactSection({ calendlyRef }: { calendlyRef: React.Ref
             </div>
           </AnimationWrapper>
 
+          <AnimationWrapper>
+            <div className="flex flex-col items-center justify-center gap-2 mb-6">
+              <a href="mailto:hello@getarkdigital.com" className="text-cyan-200 hover:text-white text-base font-medium">hello@getarkdigital.com</a>
+              <a href="tel:8164504500" className="text-cyan-200 hover:text-white text-base font-medium">816-450-4500</a>
+            </div>
+          </AnimationWrapper>
+
           <AnimationWrapper delay={0.3}>
             <div className="w-full mb-4">
               <div className="bg-purple-900/90 border-2 border-yellow-400 rounded-xl p-3 sm:p-6 text-center shadow-lg animate-pulse-slow">
@@ -123,7 +130,7 @@ export default function ContactSection({ calendlyRef }: { calendlyRef: React.Ref
               {/* Calendly inline widget begin */}
               <div
                 className="calendly-inline-widget w-full"
-                data-url="https://calendly.com/getarkdigital/discovery-call"
+                data-url="https://calendly.com/getarkdigital/discovery-call?primary_color=8a2be2&background_color=0f172a&text_color=ffffff"
                 style={{ minWidth: 0, width: '100%', height: 700, maxWidth: '100vw' }}
               ></div>
               {/* Calendly inline widget end */}

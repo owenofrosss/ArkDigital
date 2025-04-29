@@ -27,6 +27,10 @@ export default function Footer() {
             </motion.div>
           ))}
         </div>
+        <div className="flex flex-col items-center space-y-2 mb-4">
+          <a href="mailto:hello@getarkdigital.com" className="text-white/90 hover:text-cyan-300 transition-colors text-sm font-medium">hello@getarkdigital.com</a>
+          <a href="tel:8164504500" className="text-white/90 hover:text-cyan-300 transition-colors text-sm font-medium">816-450-4500</a>
+        </div>
         <p className="text-sm text-white/70">© {new Date().getFullYear()} ARK Creative. All rights reserved.</p>
       </div>
     </footer>
