@@ -3,6 +3,8 @@
 import { CreditCard, Calendar, CheckCircle } from "lucide-react"
 import { motion } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
+import { useContext } from "react"
+import { CalendlyFormRefContext } from "@/components/contact-section"
 
 export default function PaymentInfoSection() {
   const paymentOptions = [
@@ -22,6 +24,8 @@ export default function PaymentInfoSection() {
       description: "Once payment is complete, you get 100% ownership of your website and all its assets.",
     },
   ]
+
+  const calendlyRef = useContext(CalendlyFormRefContext)
 
   return (
     <section className="py-16 bg-white">
@@ -58,6 +62,15 @@ export default function PaymentInfoSection() {
               </motion.div>
             </AnimationWrapper>
           ))}
+        </div>
+
+        <div className="flex justify-center mt-12">
+          <button
+            className="bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:from-cyan-500 hover:to-purple-700 transition-all text-lg"
+            onClick={() => calendlyRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+          >
+            Get Started
+          </button>
         </div>
       </div>
     </section>

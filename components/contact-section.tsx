@@ -95,8 +95,8 @@ export default function ContactSection({ calendlyRef }: { calendlyRef: React.Ref
           </AnimationWrapper>
 
           <AnimationWrapper delay={0.3}>
-            <div className="max-w-xl mx-auto mb-8">
-              <div className="bg-purple-900/90 border-2 border-yellow-400 rounded-xl p-6 text-center shadow-lg animate-pulse-slow">
+            <div className="w-full mb-4">
+              <div className="bg-purple-900/90 border-2 border-yellow-400 rounded-xl p-3 sm:p-6 text-center shadow-lg animate-pulse-slow">
                 <div className="text-yellow-400 font-bold text-lg mb-2 flex items-center justify-center gap-2">
                   <span>WARNING: TIME-SENSITIVE OPPORTUNITY</span> <span role="img" aria-label="warning">⚠️</span>
                 </div>
@@ -124,7 +124,7 @@ export default function ContactSection({ calendlyRef }: { calendlyRef: React.Ref
               <div
                 className="calendly-inline-widget w-full"
                 data-url="https://calendly.com/owenofross/discovery-call?primary_color=8a2be2&background_color=0f172a&text_color=ffffff"
-                style={{ minWidth: 320, height: 1200 }}
+                style={{ minWidth: 0, width: '100%', height: 1200, maxWidth: '100vw' }}
               ></div>
               {/* Calendly inline widget end */}
             </div>

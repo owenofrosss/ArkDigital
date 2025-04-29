@@ -3,9 +3,11 @@
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
+import { useContext } from "react"
 
 import { Button } from "@/components/ui/button"
 import AnimationWrapper from "./animation-wrapper"
+import { CalendlyFormRefContext } from "@/components/contact-section"
 
 export default function PortfolioSection() {
   const portfolioItems = [
@@ -49,6 +51,8 @@ export default function PortfolioSection() {
         "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/472922434_1120072063155388_1116357516605983577_n.jpg-6dLC2ScIWk2FG6yXt9gJd3liMQSzeS.jpeg",
     },
   ]
+
+  const calendlyRef = useContext(CalendlyFormRefContext)
 
   return (
     <section id="portfolio" className="py-20 bg-white">
@@ -101,13 +105,11 @@ export default function PortfolioSection() {
           <AnimationWrapper delay={0.8}>
             <motion.div whileHover={{ scale: 1.05 }} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
               <Button
-                asChild
                 className="bg-gradient-to-r from-cyan-400 to-purple-600 text-white hover:from-cyan-500 hover:to-purple-700"
                 size="lg"
+                onClick={() => calendlyRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
               >
-                <Link href="#contact">
-                  <span className="font-bold">Get Your Free Website</span>
-                </Link>
+                <span className="font-bold">Get Your Free Website</span>
               </Button>
             </motion.div>
           </AnimationWrapper>
