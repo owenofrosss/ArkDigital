@@ -8,6 +8,7 @@ import { useContext } from "react"
 import { Button } from "@/components/ui/button"
 import AnimationWrapper from "./animation-wrapper"
 import { CalendlyFormRefContext } from "@/components/contact-section"
+import { openCalendlyPopup } from "@/utils/openCalendlyPopup"
 
 export default function PortfolioSection() {
   const portfolioItems = [
@@ -107,7 +108,7 @@ export default function PortfolioSection() {
               <Button
                 className="bg-gradient-to-r from-cyan-400 to-purple-600 text-white hover:from-cyan-500 hover:to-purple-700"
                 size="lg"
-                onClick={() => calendlyRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                onClick={openCalendlyPopup}
               >
                 <span className="font-bold">Get Your Free Website</span>
               </Button>

@@ -5,6 +5,7 @@ import { motion } from "framer-motion"
 import AnimationWrapper from "./animation-wrapper"
 import { useContext } from "react"
 import { CalendlyFormRefContext } from "@/components/contact-section"
+import { openCalendlyPopup } from "@/utils/openCalendlyPopup"
 
 export default function PaymentInfoSection() {
   const paymentOptions = [
@@ -67,7 +68,7 @@ export default function PaymentInfoSection() {
         <div className="flex justify-center mt-12">
           <button
             className="bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:from-cyan-500 hover:to-purple-700 transition-all text-lg"
-            onClick={() => calendlyRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+            onClick={openCalendlyPopup}
           >
             Get Started
           </button>

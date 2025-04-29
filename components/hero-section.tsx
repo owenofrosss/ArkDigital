@@ -9,6 +9,7 @@ import { useContext } from "react"
 import { Button } from "@/components/ui/button"
 import AnimationWrapper from "./animation-wrapper"
 import { CalendlyFormRefContext } from "@/components/contact-section"
+import { openCalendlyPopup } from "@/utils/openCalendlyPopup"
 
 export default function HeroSection() {
   const calendlyRef = useContext(CalendlyFormRefContext)
@@ -76,7 +77,7 @@ export default function HeroSection() {
               <Button
                 size="lg"
                 className="bg-gradient-to-r from-cyan-400 to-purple-600 text-white hover:from-cyan-500 hover:to-purple-700 text-lg px-8 py-6 h-auto transform transition-transform duration-300 hover:scale-105"
-                onClick={() => calendlyRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                onClick={openCalendlyPopup}
               >
                 <span className="flex items-center">
                   Claim My Free Custom Website <ArrowRight className="ml-2 h-5 w-5" />

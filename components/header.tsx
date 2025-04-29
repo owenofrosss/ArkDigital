@@ -1,9 +1,7 @@
 import Image from "next/image"
-import { useContext } from "react"
-import { CalendlyFormRefContext } from "@/components/contact-section"
+import { openCalendlyPopup } from "@/utils/openCalendlyPopup"
 
 export default function Header() {
-  const calendlyRef = useContext(CalendlyFormRefContext)
   return (
     <header className="w-full bg-neutral-900/95 shadow-md py-1 px-0 fixed top-0 left-0 z-50">
       <div className="container mx-auto flex items-center justify-between px-4">
@@ -18,7 +16,7 @@ export default function Header() {
         />
         <button
           className="bg-gradient-to-r from-cyan-400 to-purple-600 text-white font-bold py-1.5 px-4 rounded-lg shadow-md hover:from-cyan-500 hover:to-purple-700 transition-all text-sm"
-          onClick={() => calendlyRef?.current?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+          onClick={openCalendlyPopup}
         >
           Claim My Free Website
         </button>
