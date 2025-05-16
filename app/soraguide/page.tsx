@@ -9,9 +9,6 @@ Everything you need to turn free AI images into real money
 🔥 Top Sora Prompts (Tested for Merch)
 Use these prompts to generate art that actually sells — for posters, shirts, stickers, and more.
 
-css
-Copy
-Edit
 • Psychedelic tiger head with lightning bolts, ultra-detailed, neon colors, black background
 • Anime-style cyberpunk girl, glowing katana, city at night, cinematic lighting
 • Surreal coffee mug with a human face, vapor rising, moody lighting, photorealistic
@@ -39,9 +36,6 @@ You can connect to Etsy or just download mockups and sell directly.
 💼 Fiverr Gig Templates (Copy & Paste)
 Gig Title Ideas:
 
-sql
-Copy
-Edit
 • I'll create high-quality streetwear designs using AI
 • I'll design surreal poster art using free AI tools
 • I'll make viral digital art in 24 hours using AI
