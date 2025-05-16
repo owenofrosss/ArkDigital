@@ -1,4 +1,5 @@
 export default function SoraGuidePage() {
+  const linkStyle = { color: '#2563eb', textDecoration: 'underline' };
   return (
     <main style={{ maxWidth: 700, margin: '2rem auto', padding: '2rem', background: '#fff', borderRadius: 8, boxShadow: '0 2px 8px rgba(0,0,0,0.05)' }}>
       <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>Sora Guide</h1>
@@ -20,7 +21,7 @@ export default function SoraGuidePage() {
         <span>✅ Tip: Use dark backgrounds for shirts, clean whites for posters/stickers.</span>
         <br /><br />
         <strong>🛠️ Printify Walkthrough (Quick-Start)</strong><br />
-        Go to: <a href="https://try.printify.com/qylsr3giz2y6" target="_blank" rel="noopener noreferrer">https://try.printify.com/qylsr3giz2y6</a><br /><br />
+        Go to: <a href="https://try.printify.com/qylsr3giz2y6" style={linkStyle} target="_blank" rel="noopener noreferrer">https://try.printify.com/qylsr3giz2y6</a><br /><br />
         Sign up for free<br />
         Click “Create Product”<br />
         Choose something simple like a T-shirt or poster<br />
@@ -38,26 +39,26 @@ export default function SoraGuidePage() {
         I'll use high-end AI tools like Sora to generate stunning visuals based on your idea — perfect for shirts, posters, branding, or content. You tell me the vibe, I deliver print-ready art within 24–48h.<br /><br />
         Ideal for: streetwear brands, musicians, creators, and startups.<br />
         No stock images. All original. All yours.<br /><br />
-        Start your gig here: <a href="https://go.fiverr.com/visit/?bta=1123100&brand=fiverrmarketplace" target="_blank" rel="noopener noreferrer">https://go.fiverr.com/visit/?bta=1123100&brand=fiverrmarketplace</a><br /><br />
+        Start your gig here: <a href="https://go.fiverr.com/visit/?bta=1123100&brand=fiverrmarketplace" style={linkStyle} target="_blank" rel="noopener noreferrer">https://go.fiverr.com/visit/?bta=1123100&brand=fiverrmarketplace</a><br /><br />
         <strong>🧰 Free Mockup Generators</strong><br />
         Use these to make your designs look real for Fiverr, Etsy, or social content:<br />
         <ul>
-          <li><a href="https://smartmockups.com" target="_blank" rel="noopener noreferrer">SmartMockups – https://smartmockups.com</a></li>
-          <li><a href="https://placeit.net" target="_blank" rel="noopener noreferrer">Placeit – https://placeit.net</a></li>
-          <li><a href="https://create.vista.com" target="_blank" rel="noopener noreferrer">VistaCreate – https://create.vista.com</a></li>
-          <li><a href="https://canva.com" target="_blank" rel="noopener noreferrer">Canva – https://canva.com</a></li>
+          <li><a href="https://smartmockups.com" style={linkStyle} target="_blank" rel="noopener noreferrer">SmartMockups – https://smartmockups.com</a></li>
+          <li><a href="https://placeit.net" style={linkStyle} target="_blank" rel="noopener noreferrer">Placeit – https://placeit.net</a></li>
+          <li><a href="https://create.vista.com" style={linkStyle} target="_blank" rel="noopener noreferrer">VistaCreate – https://create.vista.com</a></li>
+          <li><a href="https://canva.com" style={linkStyle} target="_blank" rel="noopener noreferrer">Canva – https://canva.com</a></li>
         </ul>
         Upload your AI image → Pick a mockup → Download your preview → Done.<br />
       </div>
       <section style={{ marginTop: '2rem' }}>
         <h2 style={{ fontSize: '1.5rem', marginBottom: '1rem' }}>Free Tools</h2>
         <ul style={{ fontSize: '1.1rem', lineHeight: 2 }}>
-          <li><a href="https://smartmockups.com" target="_blank" rel="noopener noreferrer">SmartMockups</a></li>
-          <li><a href="https://placeit.net" target="_blank" rel="noopener noreferrer">Placeit</a></li>
-          <li><a href="https://create.vista.com" target="_blank" rel="noopener noreferrer">VistaCreate</a></li>
-          <li><a href="https://canva.com" target="_blank" rel="noopener noreferrer">Canva</a></li>
-          <li><a href="https://try.printify.com/qylsr3giz2y6" target="_blank" rel="noopener noreferrer">Printify</a></li>
-          <li><a href="https://go.fiverr.com/visit/?bta=1123100&brand=fiverrmarketplace" target="_blank" rel="noopener noreferrer">Fiverr</a></li>
+          <li><a href="https://smartmockups.com" style={linkStyle} target="_blank" rel="noopener noreferrer">SmartMockups</a></li>
+          <li><a href="https://placeit.net" style={linkStyle} target="_blank" rel="noopener noreferrer">Placeit</a></li>
+          <li><a href="https://create.vista.com" style={linkStyle} target="_blank" rel="noopener noreferrer">VistaCreate</a></li>
+          <li><a href="https://canva.com" style={linkStyle} target="_blank" rel="noopener noreferrer">Canva</a></li>
+          <li><a href="https://try.printify.com/qylsr3giz2y6" style={linkStyle} target="_blank" rel="noopener noreferrer">Printify</a></li>
+          <li><a href="https://go.fiverr.com/visit/?bta=1123100&brand=fiverrmarketplace" style={linkStyle} target="_blank" rel="noopener noreferrer">Fiverr</a></li>
         </ul>
       </section>
     </main>
